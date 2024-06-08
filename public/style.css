@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url('/bg.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: auto; /* Permite el desplazamiento vertical */
+  }
+  
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    font-family: monospace;
+    font-weight: 300;
+  }
+  
+  button {
+    background-color: rgba(57, 73, 171, 0.8); /* Darker blue with transparency for buttons */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+  }
+  
+  button:hover {
+    background-color: rgba(92, 107, 192, 0.8); /* Lighter blue on hover with transparency */
+  }
+  
+  #buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  #extra-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .manga-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    overflow: auto; /* Permite el desplazamiento en la lista de mangas */
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .manga-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 185px;
+    position: relative;
+  }
+  
+  .manga-item img {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .manga-item img:hover {
+    scale: 1.2;
+  }
+  
+  .manga-item p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(38, 49, 109, 0.8); /* Lighter blue on hover with transparency */
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+    width: max-content;
+  }
+  
+  .options a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }
+  
+
+  #back-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(57, 73, 171, 0.8); /* Darker blue with transparency for buttons */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+#back-button:hover {
+    background-color: rgba(92, 107, 192, 0.8); /* Lighter blue on hover with transparency */
+}
+
+#save-button {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(57, 73, 171, 0.8); /* Darker blue with transparency for buttons */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+  }
+  
+  #save-button:hover {
+    background-color: rgba(92, 107, 192, 0.8); /* Lighter blue on hover with transparency */
+  }

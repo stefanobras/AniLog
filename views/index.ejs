@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniLog</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1 id="title">AniLog</h1>
+  <div id="buttons">
+    <button onclick="loadManga('2020s')">2020s</button>
+    <button onclick="loadManga('2010s')">2010s</button>
+    <button onclick="loadManga('2000s')">2000s</button>
+    <button onclick="loadManga('1990s')">1990s</button>
+    <button onclick="loadManga('1980s')">1980s</button>
+    <button onclick="loadManga('1970s')">1970s</button>
+    <button onclick="loadManga('1960s')">1960s</button>
+  </div>
+  
+  <div id="extra-buttons">
+    <button onclick="loadCompletedManga()">Completed Manga</button>
+    <button onclick="loadCaughtUpManga()">Caught Up Manga</button>
+  </div>
+  <div id="manga-list" class="manga-list"></div>
+  <button id="back-button" onclick="goBackToHome()">Back to Home</button>
+  <button id="save-button" onclick="saveData()">Save Data</button>
+  <script src="/app.js"></script>
+</body>
+</html>
